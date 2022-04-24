@@ -5,3 +5,8 @@ describe("Toros y vacas ->  ganar", () => {
     });
 });
 
+class TorosVacas{
+    adivinar(intento){
+        return "ganaste";
+    }
+}
