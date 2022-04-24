@@ -8,7 +8,7 @@ class TorosVacas{
         }
         else
         {
-            if(this.codSecreto.search(intento[0]) > -1)
+            if(this.codSecreto.includes(intento[0]))
             {
                 return "*";
             }
