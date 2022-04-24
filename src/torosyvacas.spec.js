@@ -21,5 +21,11 @@ describe("buscar vacas", () => {
         const torosyvacas = new TorosVacas("12");
         expect(torosyvacas.adivinar("21")).toEqual("**");
     });
-    
+});
+
+describe("buscar toros", () => {
+    it("Si se tiene la cadena 12, y se ingresa 15, devolver '!'", () => {
+        const torosyvacas = new TorosVacas("12");
+        expect(torosyvacas.adivinar("15")).toEqual("!");
+    });
 });
