@@ -46,3 +46,14 @@ describe("buscar ternera (#)", () => {
         expect(torosyvacas.adivinar("25")).toEqual("##");
     });
 });
+
+describe("Validar cadenas miscelaneas vacas + toros + terneras", () => {
+    it("Si se tiene la cadena 148, y se ingresa 185, devolver '!*#'",() => {
+        const torosyvacas = new TorosVacas("148");
+        expect(torosyvacas.adivinar("185")).toEqual("!*#");
+    });
+    it("Si se tiene la cadena 128, y se ingresa 238, devolver '*#!'",() => {
+        const torosyvacas = new TorosVacas("128");
+        expect(torosyvacas.adivinar("238")).toEqual("*#!");
+    });
+});
