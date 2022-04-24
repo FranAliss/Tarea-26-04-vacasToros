@@ -28,6 +28,7 @@ describe("buscar toros (!)", () => {
         const torosyvacas = new TorosVacas("12");
         expect(torosyvacas.adivinar("15")).toEqual("!");
     });
+
     it("Si se tiene la cadena 12, y se ingresa 05, devolver ''", () => {
         const torosyvacas = new TorosVacas("12");
         expect(torosyvacas.adivinar("05")).toEqual("");
@@ -38,5 +39,10 @@ describe("buscar ternera (#)", () => {
     it("Si se tiene la cadena 14, y se ingresa 92, devolver una ternera '#'",() => {
         const torosyvacas = new TorosVacas("14");
         expect(torosyvacas.adivinar("92")).toEqual("#");
+    });
+
+    it("Si se tiene la cadena 14, y se ingresa 25, devolver dos terneras '##'",() => {
+        const torosyvacas = new TorosVacas("14");
+        expect(torosyvacas.adivinar("25")).toEqual("##");
     });
 });
