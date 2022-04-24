@@ -15,9 +15,19 @@ class TorosVacas{
                 {
                     resp = resp + "!";
                 }
-                else if(this.codSecreto.includes(intento[i]))
+                else
                 {
-                    resp = resp + "*";
+                    if(this.codSecreto.includes(intento[i]))
+                    {
+                        resp = resp + "*";
+                    }
+                    else
+                    {
+                        if(this.codSecreto.includes(intento[i] + 1) || this.codSecreto.includes(intento[i] - 1))
+                        {
+                            resp = resp + "#";
+                        }
+                    }
                 }
             }   
         }
