@@ -3,17 +3,21 @@ class TorosVacas{
         this.codSecreto = codSecreto;
     }
     adivinar(intento){
+        let resp = "";
         if(intento === this.codSecreto){
-            return "ganaste";
+            resp = "ganaste";
         }
         else
         {
-            if(this.codSecreto.includes(intento[0]))
+            for(let i=0;i<this.codSecreto.length;i++)
             {
-                return "*";
-            }
+                if(this.codSecreto.includes(intento[i]))
+                {
+                    resp = resp + "*";
+                }
+            }   
         }
-        return "";
+        return resp;
     }
 }
     
