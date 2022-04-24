@@ -11,11 +11,8 @@ let torosYvacas = "";
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
   const codigo = codigoSec.value; 
   torosYvacas = new TorosVacas(codigo); 
-
-  div.innerHTML = "<p>" +  codigo + "</p>";
 });
 
 adivinarForm.addEventListener("submit", (event) => {

@@ -4,7 +4,14 @@ class TorosVacas{
     }
     adivinar(intento){
         if(intento === this.codSecreto){
-        return "ganaste";
+            return "ganaste";
+        }
+        else
+        {
+            if(this.codSecreto.search(intento[0]) > -1)
+            {
+                return "*";
+            }
         }
         return "";
     }
